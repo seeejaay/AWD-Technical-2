@@ -6,23 +6,22 @@ document.addEventListener("DOMContentLoaded", function () {
   buttons.forEach(button => {
       button.addEventListener('click', function () {
           const color = this.getAttribute('border-color');
-          openBox(boxes); 
+          closeBox(boxes); 
           setTimeout(function () {
               boxes.style.borderColor = color;
-              closeBox(boxes); 
+              openBox(boxes); 
           }, 500); 
-
       });
   });
 
-  function closeBox(element) {
+  function openBox(element) {
       element.style.transition = 'height 0.5s ease';
       setTimeout(() => {
           element.style.height = '500px';
       }, 50);
   }
 
-  function openBox(element) {
+  function closeBox(element) {
       element.style.transition = 'height 0.5s ease';
       element.style.height = '0';
   }
