@@ -6,23 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
   buttons.forEach(button => {
       button.addEventListener('click', function () {
           const color = this.getAttribute('border-color');
-          slideUp(boxes); 
+          openBox(boxes); 
           setTimeout(function () {
               boxes.style.borderColor = color;
-              slideDown(boxes); 
+              closeBox(boxes); 
           }, 500); 
 
       });
   });
 
-  function slideDown(element) {
+  function closeBox(element) {
       element.style.transition = 'height 0.5s ease';
       setTimeout(() => {
           element.style.height = '500px';
       }, 50);
   }
 
-  function slideUp(element) {
+  function openBox(element) {
       element.style.transition = 'height 0.5s ease';
       element.style.height = '0';
   }
