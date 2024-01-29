@@ -11,6 +11,7 @@
   min-height: 100vh;
   width: 100%;
   transition: 200ms ease;
+  background: #000;
 }
 
 .buttons {
@@ -31,40 +32,50 @@
   border-radius: 50px;
   outline: none;
   background: transparent;
+  color: #a7a4a4;
   font-size: 1rem;
   transition: 0.3s ease-in-out;
   &:nth-child(1) {
     border: 2px solid red;
+    box-shadow: red 0px 0px 10px 0px;
   }
 
   &:nth-child(2) {
     border: 2px solid orange;
+    box-shadow: orange 0px 0px 10px 0px;
   }
 
   &:nth-child(3) {
     border: 2px solid rgb(117, 182, 33);
+    box-shadow: rgb(117, 182, 33) 0px 0px 10px 0px;
   }
 
   &:nth-child(4) {
     border: 2px solid green;
+    box-shadow: green 0px 0px 10px 0px;
   }
 
   &:nth-child(5) {
     border: 2px solid blue;
+    box-shadow: blue 0px 0px 10px 0px;
   }
 
   &:nth-child(6) {
     border: 2px solid indigo;
+    box-shadow: indigo 0px 0px 10px 0px;
   }
 
   &:nth-child(7) {
     border: 2px solid violet;
+    box-shadow: violet 0px 0px 10px 0px;
   }
 
   &:hover {
     cursor: pointer;
     transform: scale(1.1);
     border: none;
+    font-weight: bold;
+    letter-spacing: 3px;
   }
   &:nth-child(1):hover {
     background: red;

@@ -11,5 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
             boxes.style.borderColor = color;
           }, 1000);
       });
+      
     });
   });
