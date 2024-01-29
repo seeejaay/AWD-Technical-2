@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll('.button');
     const boxes = document.querySelector('.boxes');
-    boxes.style.borderColor = 'white';
+    boxes.style.borderColor = 'transparent';
   
     buttons.forEach(button => {
       button.addEventListener('click', function () {

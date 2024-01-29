@@ -104,7 +104,7 @@
   width: 30%;
   height: 500px;
   transition: 200ms ease;
-  border: 15px solid white;
+  border: 15px solid transparent;
 }
 @media screen and (max-width: 768px) {
   .container {
