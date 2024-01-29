@@ -129,9 +129,22 @@
     flex-wrap: wrap;
     transition: 200ms ease;
   }
+  .button {
+    width: 35%;
+    height: 50px;
+    font-size: 14px;
+  }
   .boxes {
     transition: 200ms ease;
     width: 100%;
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .boxes {
+    transition: 200ms ease;
+    width: 80%;
+    height: 300px !important;
   }
 }
